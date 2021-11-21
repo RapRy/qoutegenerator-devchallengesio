@@ -1,0 +1,28 @@
+@import "./_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
+main {
+  max-width: 1340px;
+  margin: 30px auto;
+}
+
+.text-footer {
+  font-family: $font-secondary;
+  font-size: 12px;
+  color: $gray-dark;
+  font-weight: 400;
+  text-align: center;
+  clear: both;
+
+  span {
+    font-weight: 700;
+    font-family: $font-secondary;
+  }
+}

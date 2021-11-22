@@ -34,7 +34,9 @@ const AuthorQoutes = ({ load, setLoad }) => {
         )}
         <div>
           {load
-            ? loadItems.map((item) => <SingleLoader isShowAuthor={false} />)
+            ? loadItems.map((item) => (
+                <SingleLoader key={item} isShowAuthor={false} />
+              ))
             : qoutes.map((qoute) => (
                 <SingleQoute
                   key={qoute._id}

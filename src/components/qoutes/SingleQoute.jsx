@@ -15,7 +15,9 @@ const SingleQoute = ({ qoute, isShowAuthor }) => {
             <Link to={`/${qoute.authorSlug}`}>
               <div className="text">
                 <span>{qoute.author}</span>
-                <span>{qoute.tags[0].replace("-", " ") || ""}</span>
+                <span>
+                  {qoute.tags.length > 0 ? qoute.tags[0].replace("-", " ") : ""}
+                </span>
               </div>
               <div className="icon">
                 <span className="material-icons">arrow_right_alt</span>
